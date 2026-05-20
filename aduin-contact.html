@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubungi Kami — Aduin.id</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        background-color: #f8fafc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+        padding: 40px 20px;
+      }
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 1;
+        opacity: 0.6;
+      }
+      .blob-1 {
+        width: 400px;
+        height: 400px;
+        background: #dbeafe;
+        top: -100px;
+        left: -100px;
+      }
+      .blob-2 {
+        width: 300px;
+        height: 300px;
+        background: #fef9c3;
+        bottom: -50px;
+        right: -50px;
+      }
+      .back-to-home {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+        color: #64748b;
+        text-decoration: none;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+        transition: color 0.2s;
+      }
+      .back-to-home:hover {
+        color: #0f172a;
+      }
+      .contact-wrapper {
+        width: 100%;
+        max-width: 480px;
+        position: relative;
+        z-index: 10;
+      }
+      .contact-card {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 48px 40px;
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+      }
+      .contact-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+        margin-bottom: 32px;
+      }
+      .contact-logo-icon {
+        background: #2563eb;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-logo-icon svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+      .contact-logo-text {
+        font-family: "Sora", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #0f172a;
+      }
+      .contact-logo-text span {
+        color: #2563eb;
+      }
+      .contact-header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+      .contact-title {
+        font-family: "Sora", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #0f172a;
+        margin: 0 0 8px;
+      }
+      .contact-sub {
+        color: #64748b;
+        font-size: 15px;
+        margin: 0;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-label {
+        display: block;
+        font-weight: 500;
+        color: #334155;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+      .form-input,
+      .form-select {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        color: #0f172a;
+        box-sizing: border-box;
+        transition: all 0.2s;
+        background: white;
+      }
+      .form-input:focus,
+      .form-select:focus {
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 14px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-top: 12px;
+      }
+      .btn-submit:hover {
+        background: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <a href="index.html" class="back-to-home">
+      <span>←</span> Kembali ke Beranda
+    </a>
+
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <a href="index.html" class="contact-logo">
+          <div class="contact-logo-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          <span class="contact-logo-text">Aduin<span>.id</span></span>
+        </a>
+
+        <div class="contact-header">
+          <h1 class="contact-title" id="formTitle">Minta Jadwal Demo</h1>
+          <p class="contact-sub">
+            Isi detail di bawah ini, tim kami akan segera menghubungi Anda.
+          </p>
+        </div>
+
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label class="form-label">Pilihan Paket</label>
+            <select class="form-select" id="paketSelect" name="paket">
+              <option value="basic">Paket Basic (Rp 0/bln)</option>
+              <option value="pro">Paket Pro (Rp 299k/bln)</option>
+              <option value="enterprise">Paket Enterprise (Custom)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nama Lengkap</label>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Masukkan nama lengkap Anda"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nama Perumahan / Instansi</label>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Contoh: Perumahan Graha Indah"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nomor WhatsApp</label>
+            <input
+              type="tel"
+              class="form-input"
+              placeholder="Contoh: 081234567890"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-submit" id="btnSubmit">
+            Minta Jadwal Demo
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Mengambil parameter paket dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const paketParam = urlParams.get("paket");
+      const paketSelect = document.getElementById("paketSelect");
+
+      // Jika ada parameter, atur nilai dropdown
+      if (paketParam) {
+        paketSelect.value = paketParam;
+        updateForm(paketParam);
+      }
+
+      // Ubah teks saat opsi dropdown diganti oleh user
+      paketSelect.addEventListener("change", function (e) {
+        updateForm(e.target.value);
+      });
+
+      function updateForm(paketValue) {
+        const formTitle = document.getElementById("formTitle");
+        const btnSubmit = document.getElementById("btnSubmit");
+
+        if (paketValue === "enterprise") {
+          formTitle.textContent = "Hubungi Tim Sales";
+          btnSubmit.textContent = "Hubungi Sales";
+        } else {
+          formTitle.textContent = "Minta Jadwal Demo";
+          btnSubmit.textContent = "Minta Jadwal Demo";
+        }
+      }
+    </script>
+  </body>
+</html>
