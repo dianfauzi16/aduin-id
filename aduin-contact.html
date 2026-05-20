@@ -165,6 +165,20 @@
       .btn-submit:hover {
         background: #1d4ed8;
       }
+      @media (max-width: 768px) {
+        body {
+          align-items: flex-start;
+          padding: 80px 20px 20px;
+        }
+        .back-to-home {
+          top: 24px;
+          left: 24px;
+          font-size: 14px;
+        }
+        .contact-card {
+          padding: 40px 24px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -195,7 +209,7 @@
           </p>
         </div>
 
-        <form action="#" method="POST">
+        <form action="aduin-success.html" method="GET">
           <div class="form-group">
             <label class="form-label">Pilihan Paket</label>
             <select class="form-select" id="paketSelect" name="paket">
