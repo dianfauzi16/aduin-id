@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aduin.id — Admin </title>
+  <script>
+    // Cek apakah admin sudah login
+    if (sessionStorage.getItem("adminLoggedIn") !== "true") {
+      window.location.replace("aduin-login.html");
+    }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/admin.css" />
 </head>
@@ -29,6 +35,7 @@
     </nav>
     <div class="sidebar-footer">
       <a href="index.html" target="_blank" class="btn-preview-site">👁 Lihat Landing Page</a>
+      <button onclick="sessionStorage.removeItem('adminLoggedIn'); window.location.replace('aduin-login.html');" style="margin-top: 10px; width: 100%; background: #ef4444; color: white; border: none; padding: 10px; border-radius: 8px; cursor: pointer; font-family: inherit; font-weight: 500; font-size: 14px;">🚪 Keluar (Logout)</button>
     </div>
   </aside>
 
