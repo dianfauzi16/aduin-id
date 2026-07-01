@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="hero-bg"></div>
@@ -30,9 +30,8 @@
         <a href="#testimonials">Testimoni</a>
       </div>
       <div class="nav-actions">
-        <a href="aduin-login.html" class="btn-ghost">Masuk</a>
         <a href="aduin-contact.html" class="btn-primary"
-          >Coba Demo <span>→</span></a
+          >Hubungi Kami <span>→</span></a
         >
       </div>
     </nav>
@@ -58,7 +57,7 @@
           </p>
           <div class="hero-actions">
             <a href="aduin-contact.html" class="btn-hero-primary"
-              >🚀 Coba Demo</a
+              >🚀 Hubungi Kami</a
             >
             <a href="aduin-contact.html" class="btn-hero-outline"
               >📅 Jadwalkan Presentasi</a
@@ -1152,20 +1151,11 @@
       </div>
     </footer>
 
+    <!-- CMS Renderer: fetch data from Firebase dan merender konten dinamis -->
+    <script type="module" src="js/renderer.js"></script>
+
     <script>
-      // Scroll reveal
-      const reveals = document.querySelectorAll(".reveal");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-            }
-          });
-        },
-        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
-      );
-      reveals.forEach((el) => observer.observe(el));
+      // Scroll reveal sudah ditangani oleh renderer.js (initScrollReveal)
 
       // Nav scroll effect
       window.addEventListener("scroll", () => {

@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "lastUpdated": "2026-06-25T17:32:00+07:00",
+    "updatedBy": "admin"
+  },
+  "hero": {
+    "badge": "Platform Pengaduan Warga Berbasis Digital di Indonesia",
+    "title": "Kelola Pengaduan Warga Lebih <span>Cepat</span> &amp; <em>Transparan</em>",
+    "subtitle": "Platform digital untuk desa, kelurahan, kampus, perumahan, dan instansi. Ubah laporan berantakan menjadi sistem yang terkelola dengan baik.",
+    "ctaPrimary": { "text": "🚀 Coba Demo", "link": "aduin-contact.html" },
+    "ctaSecondary": { "text": "📅 Jadwalkan Presentasi", "link": "aduin-contact.html" },
+    "stats": [
+      { "value": "12.000+", "label": "Laporan Terselesaikan" },
+      { "value": "340+", "label": "Institusi Aktif" },
+      { "value": "98%", "label": "Tingkat Kepuasan" }
+    ]
+  },
+  "logos": {
+    "label": "Dipercaya oleh institusi dan pemerintahan di seluruh Indonesia",
+    "items": [
+      "🏛 KELURAHAN BANYUMANIK",
+      "🏫 UNIVERSITAS DIPONEGORO",
+      "🏘 PERUM. GRAHA INDAH",
+      "🏢 PEMKOT SEMARANG",
+      "🏗 DPRD JATENG"
+    ]
+  },
+  "features": {
+    "tag": "✨ Fitur Unggulan",
+    "title": "Semua yang Anda Butuhkan dalam Satu Platform",
+    "subtitle": "Dirancang untuk mempercepat penanganan pengaduan, meningkatkan transparansi, dan membangun kepercayaan warga.",
+    "items": [
+      { "icon": "📷", "color": "fi-blue", "title": "Upload Foto & Video", "desc": "Warga dapat melampirkan bukti foto dan video langsung dari smartphone. Laporan lebih akurat dan tidak bisa dipungkiri." },
+      { "icon": "📍", "color": "fi-green", "title": "Lokasi GPS Otomatis", "desc": "Deteksi lokasi kejadian secara otomatis dengan GPS. Admin langsung tahu lokasi persis tanpa penjelasan panjang lebar." },
+      { "icon": "🔄", "color": "fi-purple", "title": "Tracking Status Real-Time", "desc": "Warga bisa memantau perkembangan laporan mereka secara real-time. Transparansi penuh dari laporan hingga selesai ditangani." },
+      { "icon": "📊", "color": "fi-orange", "title": "Dashboard Analytics", "desc": "Laporan komprehensif dengan grafik interaktif. Ketahui tren pengaduan, area bermasalah, dan performa tim Anda." },
+      { "icon": "👥", "color": "fi-pink", "title": "Multi Admin & Tim", "desc": "Kelola beberapa admin dan tim lapangan sekaligus. Atur hak akses, tugaskan laporan, dan monitor progres tim secara terpusat." },
+      { "icon": "🔔", "color": "fi-cyan", "title": "Notifikasi Otomatis", "desc": "Notifikasi WhatsApp, email, dan in-app otomatis ke warga dan admin di setiap perubahan status laporan. Tidak ada yang terlewat." }
+    ]
+  },
+  "howItWorks": {
+    "tag": "⚡ Cara Kerja",
+    "title": "Tiga Langkah Sederhana",
+    "subtitle": "Dari laporan masuk hingga masalah terselesaikan — semua berjalan otomatis dan terstruktur.",
+    "steps": [
+      { "icon": "📱", "number": "1", "title": "Warga Melapor", "desc": "Warga mengisi formulir laporan dengan foto, lokasi GPS otomatis, dan deskripsi singkat melalui aplikasi atau web." },
+      { "icon": "🎯", "number": "2", "title": "Admin Menugaskan", "desc": "Admin menerima notifikasi instan, memverifikasi laporan, dan menugaskan ke tim atau petugas lapangan yang tepat." },
+      { "icon": "✅", "number": "3", "title": "Tim Menangani", "desc": "Tim lapangan menangani masalah dan mengunggah foto bukti penyelesaian. Warga otomatis dinotifikasi saat selesai." }
+    ]
+  },
+  "pricing": {
+    "tag": "💎 Harga",
+    "title": "Paket Sesuai Kebutuhan Anda",
+    "subtitle": "Coba gratis, upgrade kapan saja. Tidak ada biaya tersembunyi.",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "Rp 0",
+        "priceSuffix": "",
+        "period": "Coba gratis selama satu minggu",
+        "popular": false,
+        "popularBadge": "",
+        "buttonText": "Mulai Gratis",
+        "buttonStyle": "outline",
+        "link": "aduin-contact.html?paket=basic",
+        "features": [
+          { "text": "Hanya 50 laporan", "included": true },
+          { "text": "1 admin akun", "included": true },
+          { "text": "Dashboard dasar", "included": true },
+          { "text": "Notifikasi email", "included": true },
+          { "text": "Notifikasi WhatsApp", "included": false },
+          { "text": "Analytics lanjutan", "included": false }
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "Rp 299k",
+        "priceSuffix": "/bln",
+        "period": "Untuk desa, kelurahan, dan perumahan",
+        "popular": true,
+        "popularBadge": "⭐ Paling Populer",
+        "buttonText": "Mulai Pro",
+        "buttonStyle": "primary",
+        "link": "aduin-contact.html?paket=pro",
+        "features": [
+          { "text": "Laporan tak terbatas", "included": true },
+          { "text": "Hingga 10 admin", "included": true },
+          { "text": "Dashboard analytics lengkap", "included": true },
+          { "text": "Notifikasi WhatsApp otomatis", "included": true },
+          { "text": "Peta heat area", "included": true },
+          { "text": "Ekspor laporan PDF/Excel", "included": true }
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "priceSuffix": "",
+        "period": "Untuk pemkot, kampus, dan institusi besar",
+        "popular": false,
+        "popularBadge": "",
+        "buttonText": "Hubungi Sales",
+        "buttonStyle": "dark",
+        "link": "aduin-contact.html?paket=enterprise",
+        "features": [
+          { "text": "Semua fitur Pro", "included": true },
+          { "text": "Admin & tim tak terbatas", "included": true },
+          { "text": "Integrasi API & SSO", "included": true },
+          { "text": "Subdomain kustom", "included": true },
+          { "text": "Dedicated support 24/7", "included": true },
+          { "text": "Onboarding & pelatihan", "included": true }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "tag": "💬 Testimoni",
+    "title": "Dipercaya Ribuan Pengguna",
+    "subtitle": "Apa kata mereka yang sudah menggunakan Aduin.id.",
+    "items": [
+      {
+        "stars": 5,
+        "text": "Sejak pakai Aduin, warga kami jauh lebih puas. Laporan tidak lagi tenggelam di grup WhatsApp. Semua tercatat, tertangani, dan transparan. Luar biasa!",
+        "name": "Bapak H. Suharto",
+        "role": "Kepala Desa Tembalang, Semarang",
+        "avatarEmoji": "👨‍💼",
+        "avatarBg": "#dbeafe"
+      },
+      {
+        "stars": 5,
+        "text": "Pengelolaan kompleks kami sekarang jauh lebih profesional. Resident bisa lapor 24 jam, tim maintenance langsung dapat notifikasi. Response time turun 70%!",
+        "name": "Ibu Diana Rahayu",
+        "role": "Pengelola Perumahan Graha Indah",
+        "avatarEmoji": "👩‍💼",
+        "avatarBg": "#dcfce7"
+      },
+      {
+        "stars": 5,
+        "text": "Kami gunakan Aduin untuk mengelola pengaduan mahasiswa dan fasilitas kampus. Dashboard analytics-nya sangat membantu manajemen dalam pengambilan keputusan.",
+        "name": "Dr. Andi Prasetyo",
+        "role": "Wakil Rektor Universitas Diponegoro",
+        "avatarEmoji": "🎓",
+        "avatarBg": "#f3e8ff"
+      }
+    ]
+  },
+  "cta": {
+    "tag": "🚀 Mulai Sekarang",
+    "title": "Mulai Digitalisasi Pengaduan Sekarang",
+    "subtitle": "Bergabung dengan 340+ institusi yang sudah membuktikan efisiensi dan transparansi bersama Aduin.id. Gratis untuk dicoba!",
+    "primary": { "text": "🚀 Coba Gratis Sekarang", "link": "aduin-contact.html?paket=basic" },
+    "secondary": { "text": "💬 Hubungi Kami", "link": "aduin-contact.html" }
+  },
+  "footer": {
+    "tagline": "Platform digital pengaduan warga untuk Indonesia yang lebih transparan dan responsif.",
+    "copyright": "© 2025 Aduin.id · Hak Cipta Dilindungi",
+    "contact": {
+      "email": "halo@aduin.id",
+      "phone": "+62 812-3456-7890",
+      "address": "Semarang, Jawa Tengah"
+    }
+  }
+}

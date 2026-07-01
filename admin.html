@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aduin.id — Admin </title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-logo">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <span>Aduin.id<span style="color:#60a5fa"></span></span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-label">Konten Landing Page</div>
+      <a href="#section-hero" class="nav-item active" data-section="hero">🏠 Hero Section</a>
+      <a href="#section-logos" class="nav-item" data-section="logos">🏢 Logo Partner</a>
+      <a href="#section-features" class="nav-item" data-section="features">✨ Fitur</a>
+      <a href="#section-how" class="nav-item" data-section="how">⚡ Cara Kerja</a>
+      <a href="#section-pricing" class="nav-item" data-section="pricing">💎 Harga</a>
+      <a href="#section-testimonials" class="nav-item" data-section="testimonials">💬 Testimoni</a>
+      <a href="#section-cta" class="nav-item" data-section="cta">🚀 CTA</a>
+      <a href="#section-footer" class="nav-item" data-section="footer">📋 Footer</a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="index.html" target="_blank" class="btn-preview-site">👁 Lihat Landing Page</a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="topbar-title">Landing Page</h1>
+        <p class="topbar-sub">Edit konten tanpa mengubah kode HTML</p>
+      </div>
+      <div class="topbar-actions">
+        <span class="save-status" id="saveStatus"></span>
+        <button class="btn-primary" id="btnSave">💾 Simpan ke Firebase</button>
+      </div>
+    </header>
+
+    <div class="content-area" id="contentArea">
+      <!-- HERO -->
+      <section class="cms-section" id="section-hero">
+        <div class="section-header"><h2>🏠 Hero Section</h2><p>Bagian utama di atas landing page</p></div>
+        <div class="form-grid">
+          <div class="form-group full"><label>Badge Text</label><input type="text" data-path="hero.badge" /></div>
+          <div class="form-group full"><label>Judul (HTML)</label><input type="text" data-path="hero.title" /><small>Gunakan &lt;span&gt; dan &lt;em&gt; untuk highlight</small></div>
+          <div class="form-group full"><label>Sub-judul</label><textarea data-path="hero.subtitle" rows="2"></textarea></div>
+          <div class="form-group"><label>Tombol Utama — Teks</label><input type="text" data-path="hero.ctaPrimary.text" /></div>
+          <div class="form-group"><label>Tombol Utama — Link</label><input type="text" data-path="hero.ctaPrimary.link" /></div>
+          <div class="form-group"><label>Tombol Kedua — Teks</label><input type="text" data-path="hero.ctaSecondary.text" /></div>
+          <div class="form-group"><label>Tombol Kedua — Link</label><input type="text" data-path="hero.ctaSecondary.link" /></div>
+        </div>
+        <div class="array-section">
+          <div class="array-header"><h3>📊 Statistik Hero</h3><button class="btn-add" data-array="hero.stats" data-template="stat">+ Tambah</button></div>
+          <div class="array-items" data-array-container="hero.stats"></div>
+        </div>
+      </section>
+
+      <!-- LOGOS -->
+      <section class="cms-section" id="section-logos">
+        <div class="section-header"><h2>🏢 Logo Partner</h2><p>Daftar institusi / partner</p></div>
+        <div class="form-grid">
+          <div class="form-group full"><label>Label</label><input type="text" data-path="logos.label" /></div>
+        </div>
+        <div class="array-section">
+          <div class="array-header"><h3>Logo Items</h3><button class="btn-add" data-array="logos.items" data-template="logo">+ Tambah</button></div>
+          <div class="array-items" data-array-container="logos.items"></div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="cms-section" id="section-features">
+        <div class="section-header"><h2>✨ Fitur Unggulan</h2><p>Kartu-kartu fitur produk</p></div>
+        <div class="form-grid">
+          <div class="form-group"><label>Tag</label><input type="text" data-path="features.tag" /></div>
+          <div class="form-group"><label>Judul</label><input type="text" data-path="features.title" /></div>
+          <div class="form-group full"><label>Sub-judul</label><textarea data-path="features.subtitle" rows="2"></textarea></div>
+        </div>
+        <div class="array-section">
+          <div class="array-header"><h3>Daftar Fitur</h3><button class="btn-add" data-array="features.items" data-template="feature">+ Tambah Fitur</button></div>
+          <div class="array-items" data-array-container="features.items"></div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="cms-section" id="section-how">
+        <div class="section-header"><h2>⚡ Cara Kerja</h2><p>Langkah-langkah penggunaan</p></div>
+        <div class="form-grid">
+          <div class="form-group"><label>Tag</label><input type="text" data-path="howItWorks.tag" /></div>
+          <div class="form-group"><label>Judul</label><input type="text" data-path="howItWorks.title" /></div>
+          <div class="form-group full"><label>Sub-judul</label><textarea data-path="howItWorks.subtitle" rows="2"></textarea></div>
+        </div>
+        <div class="array-section">
+          <div class="array-header"><h3>Langkah</h3><button class="btn-add" data-array="howItWorks.steps" data-template="step">+ Tambah Langkah</button></div>
+          <div class="array-items" data-array-container="howItWorks.steps"></div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="cms-section" id="section-pricing">
+        <div class="section-header"><h2>💎 Harga</h2><p>Paket harga layanan</p></div>
+        <div class="form-grid">
+          <div class="form-group"><label>Tag</label><input type="text" data-path="pricing.tag" /></div>
+          <div class="form-group"><label>Judul</label><input type="text" data-path="pricing.title" /></div>
+          <div class="form-group full"><label>Sub-judul</label><textarea data-path="pricing.subtitle" rows="2"></textarea></div>
+        </div>
+        <div class="array-section">
+          <div class="array-header"><h3>Paket Harga</h3><button class="btn-add" data-array="pricing.plans" data-template="plan">+ Tambah Paket</button></div>
+          <div class="array-items" data-array-container="pricing.plans"></div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="cms-section" id="section-testimonials">
+        <div class="section-header"><h2>💬 Testimoni</h2><p>Ulasan dari pengguna</p></div>
+        <div class="form-grid">
+          <div class="form-group"><label>Tag</label><input type="text" data-path="testimonials.tag" /></div>
+          <div class="form-group"><label>Judul</label><input type="text" data-path="testimonials.title" /></div>
+          <div class="form-group full"><label>Sub-judul</label><textarea data-path="testimonials.subtitle" rows="2"></textarea></div>
+        </div>
+        <div class="array-section">
+          <div class="array-header"><h3>Daftar Testimoni</h3><button class="btn-add" data-array="testimonials.items" data-template="testimonial">+ Tambah Testimoni</button></div>
+          <div class="array-items" data-array-container="testimonials.items"></div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cms-section" id="section-cta">
+        <div class="section-header"><h2>🚀 Call to Action</h2><p>Bagian ajakan di bawah halaman</p></div>
+        <div class="form-grid">
+          <div class="form-group full"><label>Tag</label><input type="text" data-path="cta.tag" /></div>
+          <div class="form-group full"><label>Judul</label><input type="text" data-path="cta.title" /></div>
+          <div class="form-group full"><label>Sub-judul</label><textarea data-path="cta.subtitle" rows="2"></textarea></div>
+          <div class="form-group"><label>Tombol Utama — Teks</label><input type="text" data-path="cta.primary.text" /></div>
+          <div class="form-group"><label>Tombol Utama — Link</label><input type="text" data-path="cta.primary.link" /></div>
+          <div class="form-group"><label>Tombol Kedua — Teks</label><input type="text" data-path="cta.secondary.text" /></div>
+          <div class="form-group"><label>Tombol Kedua — Link</label><input type="text" data-path="cta.secondary.link" /></div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <section class="cms-section" id="section-footer">
+        <div class="section-header"><h2>📋 Footer</h2><p>Informasi di bagian bawah halaman</p></div>
+        <div class="form-grid">
+          <div class="form-group full"><label>Tagline</label><textarea data-path="footer.tagline" rows="2"></textarea></div>
+          <div class="form-group full"><label>Copyright</label><input type="text" data-path="footer.copyright" /></div>
+          <div class="form-group"><label>Email</label><input type="text" data-path="footer.contact.email" /></div>
+          <div class="form-group"><label>Telepon</label><input type="text" data-path="footer.contact.phone" /></div>
+          <div class="form-group full"><label>Alamat</label><input type="text" data-path="footer.contact.address" /></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
