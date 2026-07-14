@@ -256,13 +256,36 @@ function setupEventListeners() {
   });
 
   // Sidebar navigation
-  document.querySelectorAll(".nav-item").forEach((item) => {
+  const navItems = document.querySelectorAll(".nav-item");
+  const sections = document.querySelectorAll(".cms-section");
+
+  const showSection = (targetId) => {
+    sections.forEach(sec => {
+      if ('#' + sec.id === targetId) {
+        sec.style.display = 'block';
+      } else {
+        sec.style.display = 'none';
+      }
+    });
+  };
+
+  // Tampilkan section aktif pertama kali
+  const activeItem = document.querySelector(".nav-item.active");
+  if (activeItem) {
+    showSection(activeItem.getAttribute("href"));
+  } else if (navItems.length > 0) {
+    navItems[0].classList.add("active");
+    showSection(navItems[0].getAttribute("href"));
+  }
+
+  navItems.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.preventDefault();
-      document.querySelectorAll(".nav-item").forEach((i) => i.classList.remove("active"));
+      navItems.forEach((i) => i.classList.remove("active"));
       item.classList.add("active");
-      const target = document.querySelector(item.getAttribute("href"));
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      const targetId = item.getAttribute("href");
+      showSection(targetId);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
 
